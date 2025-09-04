@@ -124,8 +124,8 @@ export default function Footer() {
                 </div>
                 <div>
                   <p className="font-semibold">E-Mail</p>
-                  <a href="mailto:info@birgulhanimkizogrenciyurdukartal.com.tr" className="text-gray-300 text-sm hover:text-primary transition-colors break-all">
-                    info@birgulhanimkizogrenciyurdukartal.com.tr
+                  <a href="mailto:info@apartkartal.com" className="text-gray-300 text-sm hover:text-primary transition-colors break-all">
+                    info@apartkartal.com
                   </a>
                 </div>
               </motion.div>

@@ -315,7 +315,7 @@ export default function Header() {
                     </p>
                     <div className="flex items-start gap-2">
                       <Mail className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
-                      <p className="text-sm break-words">info@apartkartal.com.tr</p>
+                      <p className="text-sm break-words">info@apartkartal.com</p>
                     </div>
                   </div>
                 </motion.div>

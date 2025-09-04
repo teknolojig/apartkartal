@@ -23,7 +23,7 @@ const contactInfo = [
   {
     icon: Mail,
     title: "E-posta",
-    content: "info@apartkartal.com.tr",
+    content: "info@apartkartal.com",
     detail: "24 saat içinde dönüş",
   },
   {

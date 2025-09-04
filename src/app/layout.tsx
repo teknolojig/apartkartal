@@ -91,7 +91,7 @@ export default function RootLayout({
       "addressCountry": "TR"
     },
     "telephone": "+905074373440",
-    "email": "info@apartkartal.com.tr",
+    "email": "info@apartkartal.com",
     "sameAs": [
       "https://www.facebook.com/apartkartal",
       "https://www.instagram.com/apartkartal"
