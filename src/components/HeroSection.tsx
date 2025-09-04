@@ -179,12 +179,13 @@ export default function HeroSection() {
             >
               <div className="relative w-80 h-96 lg:w-96 lg:h-[500px] xl:w-[400px] xl:h-[550px] rounded-3xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/hero-women-new.jpg"
+                  src="/hero-women.jpg"
                   alt="Apart Kartal - Kadınlar için güvenli yaşam alanları"
                   fill
                   className="object-cover object-center"
                   priority
                   quality={90}
+                  unoptimized
                 />
                 {/* Overlay gradient for better text readability if needed */}
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/10 via-transparent to-transparent" />
