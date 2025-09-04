@@ -179,7 +179,7 @@ export default function HeroSection() {
             >
               <div className="relative w-80 h-96 lg:w-96 lg:h-[500px] xl:w-[400px] xl:h-[550px] rounded-3xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/hero-women.jpg"
+                  src="/hero-women-new.jpg"
                   alt="Apart Kartal - Kadınlar için güvenli yaşam alanları"
                   fill
                   className="object-cover object-center"
