@@ -60,34 +60,36 @@ export default function QuoteModal({ isOpen, onClose }: QuoteModalProps) {
     setIsSubmitting(true)
     
     try {
-      // Database'e kaydet
-      const response = await fetch('/api/simple-quote', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      })
+      // Create WhatsApp message
+      const message = `Merhaba, apartkartal.com.tr üzerinden hızlı teklif talep ediyorum.
+
+Ad Soyad: ${formData.name}
+Telefon: ${formData.phone}
+E-posta: ${formData.email}
+Daire Tipi: ${roomTypes.find(r => r.value === formData.roomType)?.label || formData.roomType}`
+
+      const whatsappUrl = `https://wa.me/905074373440?text=${encodeURIComponent(message)}`
       
-      if (response.ok) {
-        setIsSubmitted(true)
-        
-        // Google Ads conversion tracking
-        if (typeof window !== 'undefined' && (window as any).gtag) {
-          (window as any).gtag('event', 'conversion', {
-            'send_to': 'AW-17514420608/nQQACPuIp48bEICzw59B'
-          });
-        }
-        
-        // Reset form after 3 seconds and close modal
-        setTimeout(() => {
-          setFormData({ name: "", phone: "", email: "", roomType: "" })
-          setIsSubmitted(false)
-          onClose()
-        }, 3000)
-      } else {
-        alert('Form gönderilirken bir hata oluştu. Lütfen daha sonra tekrar deneyin.')
+      // Google Ads conversion tracking
+      if (typeof window !== 'undefined' && (window as any).gtag) {
+        (window as any).gtag('event', 'conversion', {
+          'send_to': 'AW-17514420608/nQQACPuIp48bEICzw59B'
+        });
       }
+      
+      setIsSubmitted(true)
+      
+      // Open WhatsApp after a short delay
+      setTimeout(() => {
+        window.open(whatsappUrl, '_blank')
+      }, 1000)
+      
+      // Reset form after 3 seconds and close modal
+      setTimeout(() => {
+        setFormData({ name: "", phone: "", email: "", roomType: "" })
+        setIsSubmitted(false)
+        onClose()
+      }, 3000)
     } catch (error) {
       console.error('Form gönderme hatası:', error)
       alert('Form gönderilirken bir hata oluştu. Lütfen daha sonra tekrar deneyin.')

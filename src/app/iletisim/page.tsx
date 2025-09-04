@@ -53,41 +53,37 @@ export default function IletisimPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     
-    try {
-      const response = await fetch('/api/send-email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      })
-      
-      const result = await response.json()
-      
-      if (result.success) {
-        alert('Mesajınız başarıyla gönderildi. En kısa sürede size dönüş yapacağız.')
-        
-        // Google Ads conversion tracking
-        if (typeof window !== 'undefined' && (window as any).gtag) {
-          (window as any).gtag('event', 'conversion', {
-            'send_to': 'AW-17514420608/nQQACPuIp48bEICzw59B'
-          });
-        }
-        
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          subject: "",
-          message: "",
-        })
-      } else {
-        alert('Form gönderilirken bir hata oluştu. Lütfen daha sonra tekrar deneyin.')
-      }
-    } catch (error) {
-      console.error('Form gönderme hatası:', error)
-      alert('Form gönderilirken bir hata oluştu. Lütfen daha sonra tekrar deneyin.')
+    // Create WhatsApp message
+    const message = `Merhaba, apartkartal.com.tr üzerinden iletişime geçiyorum.
+
+Ad Soyad: ${formData.name}
+Telefon: ${formData.phone}
+E-posta: ${formData.email}
+Konu: ${formData.subject}
+Mesaj: ${formData.message}`
+
+    const whatsappUrl = `https://wa.me/905074373440?text=${encodeURIComponent(message)}`
+    
+    // Google Ads conversion tracking
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'conversion', {
+        'send_to': 'AW-17514420608/nQQACPuIp48bEICzw59B'
+      });
     }
+    
+    // Open WhatsApp
+    window.open(whatsappUrl, '_blank')
+    
+    // Reset form
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      subject: "",
+      message: "",
+    })
+    
+    alert('WhatsApp üzerinden mesajınızı gönderebilirsiniz.')
   }
 
   return (

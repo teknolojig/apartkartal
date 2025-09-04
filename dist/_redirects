@@ -1,0 +1,10 @@
+# 301 Yönlendirmeleri
+/index.php/anasayfa                                      /                   301
+/index.php/yurtlar/kartal-ogrenci-yurdu/odalarimiz      /odalarimiz         301
+/index.php/yurtlar/kartal-ogrenci-yurdu/yeme-icme       /yeme-icme          301
+/index.php/yurtlar/kartal-ogrenci-yurdu/guvenlik        /guvenlik           301
+/index.php/yurtlar/kartal-ogrenci-yurdu/sosyal-alanlar  /sosyal-alanlar     301
+/index.php/ulasim                                        /iletisim           301
+/index.php/iletisim-tr/kartal-iletisim                  /iletisim           301
+/index.php/iletisim-tr                                   /iletisim           301
+/index.php/hakkimizda                                    /hakkimizda         301
