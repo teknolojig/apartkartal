@@ -21,7 +21,7 @@ const roomTypes = [
 const benefits = [
   "24 Saat İçinde Dönüş",
   "Özel İndirim Fırsatları",
-  "Ücretsiz Yurt Turu",
+  "Ücretsiz Daire Turu",
 ]
 
 export default function QuoteModal({ isOpen, onClose }: QuoteModalProps) {

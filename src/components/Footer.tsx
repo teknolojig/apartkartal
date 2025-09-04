@@ -6,9 +6,9 @@ import { MapPin, Phone, Mail, Clock, Facebook, Instagram, Youtube, ExternalLink,
 import { motion } from "framer-motion"
 
 const footerLinks = {
-  yurdumuz: [
-    { name: "Odalarımız", href: "/odalarimiz", icon: Bed },
-    { name: "Yeme İçme", href: "/yeme-icme", icon: Utensils },
+  apartmanlarimiz: [
+    { name: "Dairelerimiz", href: "/odalarimiz", icon: Bed },
+    { name: "Mutfak", href: "/yeme-icme", icon: Utensils },
     { name: "Sosyal Alanlar", href: "/sosyal-alanlar", icon: Users },
     { name: "Güvenlik", href: "/guvenlik", icon: Shield },
     { name: "Çalışma Alanları", href: "/calisma-alanlari", icon: BookOpen },
@@ -17,16 +17,11 @@ const footerLinks = {
     { name: "Hakkımızda", href: "/hakkimizda", icon: Info },
     { name: "İletişim", href: "/iletisim", icon: Phone },
   ],
-  tumYurtlarimiz: [
-    { name: "İstanbul Beykoz", href: "https://birgulhanimkizogrenciyurdubeykoz.com.tr/", external: true },
-    { name: "İstanbul Kartal", href: "https://birgulhanimkizogrenciyurdukartal.com.tr/", external: true },
-    { name: "İzmir Bornova", href: "https://birgulhanimkizogrenciyurtlari.com.tr/", external: true },
-  ],
 }
 
 const socialLinks = [
-  { icon: Instagram, href: "https://www.instagram.com/birgulhanimyurtlarikartal/", label: "Instagram" },
-  { icon: Youtube, href: "https://www.youtube.com/@Birgulhanimkizogrenciyurtlari", label: "Youtube" },
+  { icon: Instagram, href: "https://www.instagram.com/apartkartal/", label: "Instagram" },
+  { icon: Facebook, href: "https://www.facebook.com/apartkartal/", label: "Facebook" },
 ]
 
 export default function Footer() {
@@ -51,14 +46,14 @@ export default function Footer() {
             className="lg:col-span-1"
           >
             <Image
-              src="/beyazlogo.png"
-              alt="Birgül Hanım Logo"
+              src="/beyazlogo.svg"
+              alt="Apart Kartal Logo"
               width={256}
               height={71}
               className="h-16 w-auto mb-6"
             />
             <p className="text-gray-300 mb-6 leading-relaxed">
-              15 yılı aşkın deneyimimizle Kartal&apos;ın en güvenli ve konforlu kız öğrenci yurdu.
+              15 yılı aşkın deneyimimizle Kartal&apos;ın en güvenli ve konforlu kiralık daire adresi.
             </p>
             <div className="flex gap-4">
               {socialLinks.map((social) => (
@@ -114,8 +109,8 @@ export default function Footer() {
                 </div>
                 <div>
                   <p className="font-semibold">Telefon</p>
-                  <a href="tel:+905330359573" className="text-gray-300 text-sm hover:text-primary transition-colors">
-                    +90 533 035 95 73
+                  <a href="tel:+905074373440" className="text-gray-300 text-sm hover:text-primary transition-colors">
+                    +90 507 437 34 40
                   </a>
                 </div>
               </motion.div>
@@ -145,10 +140,10 @@ export default function Footer() {
             viewport={{ once: true }}
           >
             <h4 className="text-xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              Yurdumuz
+              Apartmanımız
             </h4>
             <ul className="space-y-3">
-              {footerLinks.yurdumuz.map((link) => (
+              {footerLinks.apartmanlarimiz.map((link) => (
                 <motion.li key={link.name} whileHover={{ x: 5 }}>
                   <Link
                     href={link.href}
@@ -186,27 +181,6 @@ export default function Footer() {
               ))}
             </ul>
             
-            {/* Tüm Yurtlarımız - Kurumsal altında */}
-            <div className="mt-8">
-              <h4 className="text-xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                Tüm Yurtlarımız
-              </h4>
-              <ul className="space-y-3">
-                {footerLinks.tumYurtlarimiz.map((link) => (
-                  <motion.li key={link.name} whileHover={{ x: 5 }}>
-                    <a
-                      href={link.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-gray-300 hover:text-primary transition-colors flex items-center gap-2 group"
-                    >
-                      <ExternalLink className="w-4 h-4 opacity-100 flex-shrink-0" />
-                      {link.name}
-                    </a>
-                  </motion.li>
-                ))}
-              </ul>
-            </div>
           </motion.div>
         </div>
 
@@ -220,7 +194,7 @@ export default function Footer() {
         >
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-sm text-center md:text-left">
-              © {new Date().getFullYear()} Birgül Hanım Kız Öğrenci Yurtları. Tüm hakları saklıdır.
+              © {new Date().getFullYear()} Apart Kartal. Tüm hakları saklıdır.
             </p>
             <a 
               href="https://teknolojig.com" 

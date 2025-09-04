@@ -17,13 +17,13 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Telefon",
-    content: "+90 533 035 95 73",
+    content: "+90 507 437 34 40",
     detail: "Hafta içi 08:00 - 20:00",
   },
   {
     icon: Mail,
     title: "E-posta",
-    content: "info@birgulhanimkizogrenciyurdukartal.com.tr",
+    content: "info@apartkartal.com.tr",
     detail: "24 saat içinde dönüş",
   },
   {
@@ -199,9 +199,9 @@ export default function IletisimPage() {
                       className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
                     >
                       <option value="">Seçiniz</option>
-                      <option value="kayit">Kayıt ve Fiyat Bilgisi</option>
-                      <option value="oda">Oda Bilgisi</option>
-                      <option value="ziyaret">Yurt Ziyareti</option>
+                      <option value="kiralama">Kiralama ve Fiyat Bilgisi</option>
+                      <option value="daire">Daire Bilgisi</option>
+                      <option value="ziyaret">Daire Ziyareti</option>
                       <option value="diger">Diğer</option>
                     </select>
                   </div>

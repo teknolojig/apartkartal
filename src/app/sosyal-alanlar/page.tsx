@@ -11,7 +11,7 @@ const socialAreas = [
   {
     icon: Tv,
     title: "Dinlenme Odaları",
-    description: "Öğrencilerimizin dinlenebileceği, televizyon izleyebilecekleri konforlu alanlar",
+    description: "Sakinlerimizin dinlenebileceği, televizyon izleyebilecekleri konforlu alanlar",
     features: ["Rahat koltuklar", "Geniş ekran TV", "Huzurlu atmosfer"],
   },
   {
@@ -35,7 +35,7 @@ const socialAreas = [
   {
     icon: TreePalm,
     title: "Açık Teras ve Çardak",
-    description: "Öğrencilerimizin arkadaşlarıyla sosyalleşebileceği açık hava alanları",
+    description: "Sakinlerimizin arkadaşlarıyla sosyalleşebileceği açık hava alanları",
     features: ["Ferah teras alanı", "Oturma grupları", "Manzaralı çardak", "Yeşil alan"],
   },
   {
@@ -103,7 +103,7 @@ export default function SosyalAlanlarPage() {
           </div>
         </section>
         
-        {/* Neden Birgül Hanım Bölümü */}
+        {/* Neden Apart Kartal Bölümü */}
         <Features />
       </main>
       <Footer />

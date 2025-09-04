@@ -1,16 +1,10 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { MapPin, Train, Bus, Car, GraduationCap, Trees, Navigation, ExternalLink, ShoppingBag, Plane } from "lucide-react"
+import { MapPin, Train, Bus, Car, Trees, Navigation, ExternalLink, ShoppingBag, Plane } from "lucide-react"
 import Link from "next/link"
 
 const locations = [
-  {
-    icon: GraduationCap,
-    name: "Gedik Üniversitesi",
-    time: "5 Dk",
-    color: "from-blue-500 to-blue-600",
-  },
   {
     icon: Train,
     name: "Adnan Kahveci Metrosu",
@@ -58,12 +52,12 @@ export default function LocationTransport() {
             Merkezi <span className="text-primary">Konum</span>
           </h2>
           <p className="section-subtitle">
-            Ulaşımı kolay, her yere yakın konumumuzla öğrencilerimize büyük kolaylık sağlıyoruz
+            Ulaşımı kolay, her yere yakın konumumuzla sakinlerimize büyük kolaylık sağlıyoruz
           </p>
         </motion.div>
 
         {/* Desktop Grid */}
-        <div className="hidden lg:grid grid-cols-6 gap-4 max-w-6xl mx-auto">
+        <div className="hidden lg:grid grid-cols-5 gap-6 max-w-5xl mx-auto">
           {locations.map((location, index) => (
             <motion.div
               key={location.name}
@@ -121,7 +115,7 @@ export default function LocationTransport() {
         </div>
 
         {/* Mobile/Tablet Grid */}
-        <div className="lg:hidden grid grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="lg:hidden grid grid-cols-2 md:grid-cols-3 gap-4 max-w-md md:max-w-2xl mx-auto">
           {locations.map((location, index) => (
             <motion.div
               key={location.name}

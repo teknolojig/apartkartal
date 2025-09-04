@@ -33,7 +33,7 @@ const securityFeatures = [
   {
     icon: Lock,
     title: "Kartlı Geçiş Sistemi",
-    description: "Yurt girişleri kartlı sistemle kontrol altında",
+    description: "Apartman girişleri kartlı sistemle kontrol altında",
     details: [
       "Kişiye özel kartlar",
       "Giriş-çıkış kaydı",
@@ -62,7 +62,7 @@ export default function GuvenlikPage() {
       <main className="min-h-screen page-bg">
         <MiniHero 
           title="Güvenlik" 
-          subtitle="Öğrencilerimizin güvenliği bizim en önemli önceliğimiz"
+          subtitle="Sakinlerimizin güvenliği bizim en önemli önceliğimiz"
         />
         
         <section className="section-padding">
@@ -102,7 +102,7 @@ export default function GuvenlikPage() {
           </div>
         </section>
         
-        {/* Neden Birgül Hanım Bölümü */}
+        {/* Neden Apart Kartal Bölümü */}
         <Features />
       </main>
       <Footer />

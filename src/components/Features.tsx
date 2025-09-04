@@ -59,10 +59,10 @@ export default function Features() {
           className="text-center mb-16"
         >
           <h2 className="section-title">
-            Neden <span className="text-primary">Birgül Hanım?</span>
+            Neden <span className="text-primary">Apart Kartal?</span>
           </h2>
           <p className="section-subtitle">
-            Öğrencilerimizin rahat ve huzurlu bir ortamda eğitimlerine odaklanmaları için
+            Sakinlerimizin rahat ve huzurlu bir ortamda yaşamaları için
             sunduğumuz ayrıcalıklar
           </p>
         </motion.div>

@@ -9,7 +9,7 @@ import Image from "next/image"
 
 const stats = [
   { icon: Calendar, value: "15+", label: "Yıllık Deneyim" },
-  { icon: Users, value: "1.500+", label: "Mutlu Öğrenci" },
+  { icon: Users, value: "1.500+", label: "Mutlu Müşteri" },
   { icon: Award, value: "100%", label: "Memnuniyet" },
   { icon: Heart, value: "7/24", label: "Destek" },
 ]
@@ -17,19 +17,19 @@ const stats = [
 const values = [
   {
     title: "Güvenli Ortam",
-    description: "Öğrencilerimizin güvenliği bizim en önemli önceliğimizdir. 7/24 güvenlik sistemi ve profesyonel personelimizle huzurlu bir ortam sağlıyoruz.",
+    description: "Sakinlerimizin güvenliği bizim en önemli önceliğimizdir. 7/24 güvenlik sistemi ve profesyonel personelimizle huzurlu bir ortam sağlıyoruz.",
   },
   {
     title: "Aile Sıcaklığı",
-    description: "Yurtlarımızı sadece bir konaklama yeri olarak görmüyoruz. Her öğrencimize kendi evindeymiş gibi hissettiren sıcak bir ortam sunuyoruz.",
+    description: "Apartmanlarımızı sadece bir konaklama yeri olarak görmüyoruz. Her sakinimize kendi evindeymiş gibi hissettiren sıcak bir ortam sunuyoruz.",
   },
   {
-    title: "Akademik Destek",
-    description: "Öğrencilerimizin akademik başarıları için ideal çalışma ortamları ve gerekli tüm imkanları sağlıyoruz.",
+    title: "Profesyonel Destek",
+    description: "Sakinlerimizin iş ve çalışma hayatları için ideal çalışma ortamları ve gerekli tüm imkanları sağlıyoruz.",
   },
   {
     title: "Modern Yaşam",
-    description: "Çağın gereksinimlerine uygun, modern ve konforlu yaşam alanları ile öğrencilerimizin tüm ihtiyaçlarını karşılıyoruz.",
+    description: "Çağın gereksinimlerine uygun, modern ve konforlu yaşam alanları ile sakinlerimizin tüm ihtiyaçlarını karşılıyoruz.",
   },
 ]
 
@@ -40,7 +40,7 @@ export default function HakkimizdaPage() {
       <main className="min-h-screen page-bg">
         <MiniHero 
           title="Hakkımızda"
-          subtitle="15 yılı aşkın deneyimimizle İstanbul Kartal'da kız öğrencilerimize güvenli, konforlu ve modern yaşam alanları sunuyoruz."
+          subtitle="15 yılı aşkın deneyimimizle İstanbul Kartal'da güvenli, konforlu ve modern kiralık daireler sunuyoruz."
         />
         <section className="relative py-20 overflow-hidden bg-gradient-to-b from-primary/5 via-white to-primary/5">
           <div className="container relative z-10">
@@ -53,20 +53,20 @@ export default function HakkimizdaPage() {
                 viewport={{ once: true }}
               >
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                  Birgül Hanım Kız Öğrenci Yurtları&apos;na{" "}
+                  Apart Kartal&apos;a{" "}
                   <span className="text-primary">Hoş Geldiniz</span>
                 </h2>
                 <div className="space-y-4 text-gray-600">
                   <p>
                     2009 yılından bu yana İstanbul Kartal&apos;da faaliyet gösteren yurdumuz, 
-                    kız öğrencilerimize ev sıcaklığında, güvenli ve konforlu bir yaşam alanı sunmaktadır.
+                    kiracılarımıza ev sıcaklığında, güvenli ve konforlu bir yaşam alanı sunmaktadır.
                   </p>
                   <p>
-                    Modern tesislerimiz, deneyimli personelimiz ve öğrenci odaklı hizmet anlayışımızla, 
-                    öğrencilerimizin akademik başarılarına katkıda bulunurken, sosyal gelişimlerini de destekliyoruz.
+                    Modern tesislerimiz, deneyimli personelimiz ve müşteri odaklı hizmet anlayışımızla, 
+                    sakinlerimizin rahat yaşamalarına katkıda bulunurken, sosyal ihtiyaçlarını da destekliyoruz.
                   </p>
                   <p>
-                    Ailelerin içi rahat, öğrencilerin mutlu olduğu bir ortam yaratmak için 
+                    Kiracılarımızın huzurlu ve mutlu olduğu bir ortam yaratmak için 
                     sürekli kendimizi geliştiriyor ve yeniliyoruz.
                   </p>
                 </div>
@@ -81,8 +81,8 @@ export default function HakkimizdaPage() {
               >
                 <div className="flex items-center justify-center h-full bg-gradient-to-br from-primary/5 to-secondary/5">
                   <Image
-                    src="/logo.png"
-                    alt="Birgül Hanım Yurtları"
+                    src="/logo.svg"
+                    alt="Apart Kartal"
                     width={256}
                     height={71}
                     className="w-4/5 h-auto"
@@ -146,9 +146,9 @@ export default function HakkimizdaPage() {
             >
               <h2 className="text-3xl font-bold mb-6">Misyonumuz</h2>
               <p className="text-lg mb-8 max-w-3xl mx-auto">
-                Kız öğrencilerimize güvenli, huzurlu ve ev sıcaklığında bir ortam sunarak, 
-                akademik ve sosyal gelişimlerine katkıda bulunmak, ailelerinin güvenini kazanmak 
-                ve öğrencilerimizin başarılı bir geleceğe adım atmalarına yardımcı olmaktır.
+                Kiracılarımıza güvenli, huzurlu ve ev sıcaklığında bir ortam sunarak, 
+                rahat ve konforlu yaşamalarına katkıda bulunmak, güvenlerini kazanmak 
+                ve müşteri memnuniyetini en üst düzeyde tutmaktır.
               </p>
               <motion.button
                 whileHover={{ scale: 1.05 }}

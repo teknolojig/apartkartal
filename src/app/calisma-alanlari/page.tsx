@@ -32,7 +32,7 @@ const mainFeatures = [
   {
     icon: Sparkles,
     title: "Temiz ve Düzenli Ortam",
-    description: "Öğrencilerimizin rahat çalışabilmesi için temiz ortamlar sunuyoruz",
+    description: "Sakinlerimizin rahat çalışabilmesi için temiz ortamlar sunuyoruz",
     color: "from-blue-500 to-blue-600",
   },
   {
@@ -86,7 +86,7 @@ export default function CalismaAlanlariPage() {
                 Çalışma Alanı <span className="text-primary">Özelliklerimiz</span>
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Öğrencilerimizin akademik başarıları için her detayı düşündüğümüz çalışma alanlarımız
+                Sakinlerimizin verimli çalışmaları için her detayı düşündüğümüz çalışma alanlarımız
               </p>
             </motion.div>
 
@@ -135,7 +135,7 @@ export default function CalismaAlanlariPage() {
           </div>
         </section>
         
-        {/* Neden Birgül Hanım Bölümü */}
+        {/* Neden Apart Kartal Bölümü */}
         <Features />
       </main>
       <Footer />

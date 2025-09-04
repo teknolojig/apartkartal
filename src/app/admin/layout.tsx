@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Admin Panel - Birgül Hanım Kız Öğrenci Yurdu',
+  title: 'Admin Panel - Apart Kartal',
   robots: {
     index: false,
     follow: false,

@@ -22,19 +22,6 @@ export default function LazySection({ children, fallback }: LazySectionProps) {
 }
 
 // Lazy load components
-export const LazyTestimonials = dynamic(
-  () => import("@/components/Testimonials"),
-  { 
-    loading: () => (
-      <div className="min-h-[400px] flex items-center justify-center">
-        <div className="animate-pulse">
-          <div className="h-8 bg-gray-200 rounded w-32 mx-auto"></div>
-        </div>
-      </div>
-    ),
-    ssr: true
-  }
-)
 
 export const LazyLocationTransport = dynamic(
   () => import("@/components/LocationTransport"),
@@ -50,19 +37,6 @@ export const LazyLocationTransport = dynamic(
   }
 )
 
-export const LazyApplicationProcess = dynamic(
-  () => import("@/components/ApplicationProcess"),
-  { 
-    loading: () => (
-      <div className="min-h-[400px] flex items-center justify-center">
-        <div className="animate-pulse">
-          <div className="h-8 bg-gray-200 rounded w-32 mx-auto"></div>
-        </div>
-      </div>
-    ),
-    ssr: true
-  }
-)
 
 export const LazyGalleryModal = dynamic(
   () => import("@/components/GalleryModal"),

@@ -28,7 +28,7 @@ const services = [
   {
     icon: Soup,
     title: "Kantin",
-    description: "Öğrencilerimizin sosyalleşme ve çalışma alanı olarak kullanabileceği kantinimiz.",
+    description: "Sakinlerimizin sosyalleşme ve çalışma alanı olarak kullanabileceği ortak alanımız.",
     highlight: "SOSYAL ALAN",
   },
   {
@@ -70,7 +70,7 @@ export default function YemeIcmePage() {
       <main className="min-h-screen page-bg">
         <MiniHero 
           title="Yeme İçme" 
-          subtitle="Öğrencilerimizin sağlıklı beslenmesi ve sosyalleşmesi için zengin imkanlar sunuyoruz"
+          subtitle="Sakinlerimizin sağlıklı beslenmesi ve sosyalleşmesi için zengin imkanlar sunuyoruz"
         />
         
         <section className="section-padding">

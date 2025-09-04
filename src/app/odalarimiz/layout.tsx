@@ -1,32 +1,32 @@
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Kartal Kız Öğrenci Yurdu Odaları | 1-6 Kişilik Oda Seçenekleri",
-  description: "Kartal kız öğrenci yurdumuzda 1, 2, 3, 4, 5 ve 6 kişilik konforlu oda seçenekleri. Güvenli ve uygun fiyatlı kız yurdu odaları. Fiyatlar ve detaylı bilgi için tıklayın.",
-  keywords: "kartal kız öğrenci yurdu odaları, kartal kız öğrenci yurdu fiyatları, kartal öğrenci yurdu odaları, 1 kişilik kız öğrenci yurdu odası, 2 kişilik kız öğrenci yurdu odası, kartal uygun fiyatlı kız öğrenci yurdu, birgül hanım yurt odaları",
+  title: "Apart Kartal Dairelerimiz | 1+1, 2+1, 3+1, 4+1 Kiralık Daireler",
+  description: "Kartal'da 1+1'den 6+1'e kadar farklı büyüklükte kiralık daire seçenekleri. Modern, güvenli ve tam donanımlı daireler. Uygun fiyat garantisi.",
+  keywords: "kartal 1+1 kiralık daire, kartal 2+1 kiralık daire, kartal 3+1 kiralık daire, apart kartal daire fiyatları, kartal kiralık daire oda sayısı, apart kartal daire seçenekleri",
   alternates: {
-    canonical: "https://birgulhanimkizogrenciyurdukartal.com.tr/odalarimiz",
+    canonical: "https://apartkartal.com.tr/odalarimiz",
   },
   openGraph: {
-    title: "Kartal Kız Öğrenci Yurdu Oda Seçenekleri | Birgül Hanım",
-    description: "Kartal'da 1-6 kişilik güvenli kız öğrenci yurdu odaları. Her odada mini buzdolabı, çalışma alanı ve yüksek hızlı internet. Detaylı bilgi ve fiyatlar için tıklayın.",
-    url: "https://birgulhanimkizogrenciyurdukartal.com.tr/odalarimiz",
+    title: "Dairelerimiz | Apart Kartal Kiralık Daireler",
+    description: "1+1'den 6+1'e kadar farklı büyüklükte modern ve konforlu kiralık daire seçenekleri. Her bütçeye uygun daireler.",
+    url: "https://apartkartal.com.tr/odalarimiz",
     type: "website",
     locale: "tr_TR",
-    siteName: "Birgül Hanım Kız Öğrenci Yurtları",
+    siteName: "Apart Kartal",
     images: [
       {
         url: '/images/rooms/hero.jpg',
         width: 1200,
         height: 630,
-        alt: 'Kartal Kız Öğrenci Yurdu Odaları',
+        alt: 'Apart Kartal Dairelerimiz',
       }
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kartal Kız Öğrenci Yurdu Odaları | 1-6 Kişilik",
-    description: "Kartal'da konforlu ve güvenli kız öğrenci yurdu odaları. İnternetli ve uygun fiyatlı seçenekler.",
+    title: "Apart Kartal Dairelerimiz",
+    description: "Farklı büyüklükte modern ve konforlu kiralık daireler",
     images: ['/images/rooms/hero.jpg'],
   },
 };

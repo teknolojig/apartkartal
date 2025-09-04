@@ -5,10 +5,10 @@ import { withAuth } from 'next-auth/middleware'
 // 301 Yönlendirme Haritası
 const redirectMap: Record<string, string> = {
   '/index.php/anasayfa': '/',
-  '/index.php/yurtlar/kartal-ogrenci-yurdu/odalarimiz': '/odalarimiz',
-  '/index.php/yurtlar/kartal-ogrenci-yurdu/yeme-icme': '/yeme-icme',
-  '/index.php/yurtlar/kartal-ogrenci-yurdu/guvenlik': '/guvenlik',
-  '/index.php/yurtlar/kartal-ogrenci-yurdu/sosyal-alanlar': '/sosyal-alanlar',
+  '/index.php/apartlar/kartal-apart/odalarimiz': '/odalarimiz',
+  '/index.php/apartlar/kartal-apart/yeme-icme': '/yeme-icme',
+  '/index.php/apartlar/kartal-apart/guvenlik': '/guvenlik',
+  '/index.php/apartlar/kartal-apart/sosyal-alanlar': '/sosyal-alanlar',
   '/index.php/ulasim': '/iletisim',
   '/index.php/iletisim-tr/kartal-iletisim': '/iletisim',
   '/index.php/iletisim-tr': '/iletisim',

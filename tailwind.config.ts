@@ -12,14 +12,14 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         primary: {
-          DEFAULT: "#f42a93",
-          light: "#ff5db5",
-          dark: "#d21471",
+          DEFAULT: "#FF9B00",
+          light: "#FFB544",
+          dark: "#CC7C00",
         },
         secondary: {
-          DEFAULT: "#d94f9a",
-          light: "#e673b0",
-          dark: "#c13680",
+          DEFAULT: "#FFA726",
+          light: "#FFCC80",
+          dark: "#E65100",
         },
       },
       animation: {

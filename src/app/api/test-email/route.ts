@@ -33,7 +33,7 @@ export async function GET() {
     const info = await transporter.sendMail({
       from: `"Test Email" <${config.user}>`,
       to: config.to,
-      subject: 'Test Email - Birgül Hanım Web Sitesi',
+      subject: 'Test Email - Apart Kartal Web Sitesi',
       text: 'Bu bir test emailidir.',
       html: '<b>Bu bir test emailidir.</b>'
     });

@@ -10,26 +10,26 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Birgül Hanım Kız Öğrenci Yurtları - Kartal'ın En İyi Kız Öğrenci Yurdu",
-  description: "Kartal'da güvenli, konforlu ve modern kız öğrenci yurdu. 1, 2, 3, 4, 5 ve 6 kişilik oda seçenekleri, sosyal alanlar, yemek hizmetleri ve 7/24 güvenlik.",
-  keywords: "kız öğrenci yurdu, kartal kız öğrenci yurdu, istanbul kız öğrenci yurdu, öğrenci yurdu, birgül hanım yurtları, güvenli kız öğrenci yurdu, modern öğrenci yurdu, istanbul üniversitesi yurt, kartal özel yurt, kız öğrenci yurdu fiyatları",
-  authors: [{ name: "Birgül Hanım Kız Öğrenci Yurtları" }],
-  creator: "Birgül Hanım Kız Öğrenci Yurtları",
-  publisher: "Birgül Hanım Kız Öğrenci Yurtları",
+  title: "Apart Kartal - Kartal'da Kiralık Daireler ve Apartmanlar",
+  description: "Kartal'da güvenli, konforlu ve modern kiralık daire seçenekleri. 1, 2, 3, 4, 5 ve 6 odalı daireler, sosyal alanlar, güvenlik hizmetleri.",
+  keywords: "kartal kiralık daire, kartal apart, istanbul kartal kiralık ev, kiralık apartman kartal, apart kartal, kartal apartment, kiralık ev kartal",
+  authors: [{ name: "Apart Kartal" }],
+  creator: "Apart Kartal",
+  publisher: "Apart Kartal",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://birgulhanimkizogrenciyurdukartal.com.tr"),
+  metadataBase: new URL("https://apartkartal.com.tr"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Birgül Hanım Kız Öğrenci Yurtları - Kartal'ın En İyi Kız Öğrenci Yurdu",
-    description: "Kartal'da güvenli, konforlu ve modern kız öğrenci yurdu. 1, 2, 3, 4, 5 ve 6 kişilik oda seçenekleri.",
-    url: "https://birgulhanimkizogrenciyurdukartal.com.tr",
-    siteName: "Birgül Hanım Kız Öğrenci Yurtları",
+    title: "Apart Kartal - Kartal'da Kiralık Daireler",
+    description: "Kartal'da güvenli, konforlu ve modern kiralık daire seçenekleri. Farklı oda sayısında daireler.",
+    url: "https://apartkartal.com.tr",
+    siteName: "Apart Kartal",
     locale: "tr_TR",
     type: "website",
     images: [
@@ -37,14 +37,14 @@ export const metadata: Metadata = {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Birgül Hanım Kız Öğrenci Yurtları',
+        alt: 'Apart Kartal Kiralık Daireler',
       }
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Birgül Hanım Kız Öğrenci Yurtları",
-    description: "Kartal'ın en güvenli ve konforlu kız öğrenci yurdu",
+    title: "Apart Kartal",
+    description: "Kartal'da güvenli ve konforlu kiralık daireler",
     images: ['/og-image.jpg'],
   },
   robots: {
@@ -76,12 +76,12 @@ export default function RootLayout({
 }>) {
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "EducationalOrganization",
-    "name": "Birgül Hanım Kız Öğrenci Yurtları",
-    "alternateName": "Birgül Hanım Kartal Kız Öğrenci Yurdu",
-    "url": "https://birgulhanimkizogrenciyurdukartal.com.tr",
-    "logo": "https://birgulhanimkizogrenciyurdukartal.com.tr/logo.png",
-    "description": "Kartal'da güvenli, konforlu ve modern kız öğrenci yurdu. 15 yılı aşkın deneyimimizle öğrencilerimize en iyi hizmeti sunuyoruz.",
+    "@type": "ApartmentComplex",
+    "name": "Apart Kartal",
+    "alternateName": "Apart Kartal Kiralık Daireler",
+    "url": "https://apartkartal.com.tr",
+    "logo": "https://apartkartal.com.tr/logo.svg",
+    "description": "Kartal'da güvenli, konforlu ve modern kiralık daireler ve apartmanlar. 15 yılı aşkın deneyimimizle en iyi kiralama hizmetini sunuyoruz.",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Yalı Mahallesi Tuğra Sokak No:6",
@@ -90,16 +90,15 @@ export default function RootLayout({
       "postalCode": "34873",
       "addressCountry": "TR"
     },
-    "telephone": "+905330359573",
-    "email": "info@birgulhanimkizogrenciyurdukartal.com.tr",
+    "telephone": "+905074373440",
+    "email": "info@apartkartal.com.tr",
     "sameAs": [
-      "https://www.facebook.com/birgulhanimyurtlari",
-      "https://www.instagram.com/birgulhanimyurtlari"
+      "https://www.facebook.com/apartkartal",
+      "https://www.instagram.com/apartkartal"
     ],
     "priceRange": "$$",
-    "servesCuisine": "Turkish",
     "hasMap": "https://maps.app.goo.gl/p766aV1YQ13RF2TF6",
-    "openingHours": "Mo-Su 00:00-24:00",
+    "openingHours": "Mo-Su 09:00-18:00",
     "geo": {
       "@type": "GeoCoordinates",
       "latitude": "40.8967478",
@@ -118,12 +117,12 @@ export default function RootLayout({
       },
       {
         "@type": "LocationFeatureSpecification",
-        "name": "Ücretsiz Kahvaltı",
+        "name": "Otopark",
         "value": true
       },
       {
         "@type": "LocationFeatureSpecification",
-        "name": "Çalışma Odaları",
+        "name": "Asansör",
         "value": true
       },
       {

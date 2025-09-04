@@ -40,16 +40,16 @@ export async function POST(request: NextRequest) {
     // E-posta içeriğini hazırla
     const isQuoteForm = roomType ? true : false;
     const emailSubject = isQuoteForm 
-      ? `Kartal Şubesi - Yeni Teklif Talebi - ${name}` 
-      : `Kartal Şubesi - ${subject || 'İletişim Formu'} - ${name}`;
+      ? `Apart Kartal - Yeni Teklif Talebi - ${name}` 
+      : `Apart Kartal - ${subject || 'İletişim Formu'} - ${name}`;
     
     let emailBody = `
       <h2 style="color: #f42a93;">${isQuoteForm ? 'Yeni Teklif Talebi' : 'Yeni İletişim Formu Mesajı'}</h2>
-      <h3 style="color: #666;">Birgül Hanım Kartal Şubesi</h3>
+      <h3 style="color: #666;">Apart Kartal</h3>
       <hr style="border-color: #f42a93;">
       <table style="width: 100%; font-family: Arial, sans-serif;">
         <tr>
-          <td style="padding: 8px; font-weight: bold; width: 200px;">Öğrenci Adı Soyadı:</td>
+          <td style="padding: 8px; font-weight: bold; width: 200px;">Ad Soyad:</td>
           <td style="padding: 8px;">${name}</td>
         </tr>
         <tr style="background-color: #f5f5f5;">
@@ -65,7 +65,7 @@ export async function POST(request: NextRequest) {
     if (isQuoteForm) {
       emailBody += `
         <tr style="background-color: #f5f5f5;">
-          <td style="padding: 8px; font-weight: bold;">Talep Edilen Oda Tipi:</td>
+          <td style="padding: 8px; font-weight: bold;">Talep Edilen Daire Tipi:</td>
           <td style="padding: 8px;">${roomType}</td>
         </tr>
       `;
@@ -87,13 +87,13 @@ export async function POST(request: NextRequest) {
       <hr style="margin-top: 30px; border-color: #ddd;">
       <p style="color: #666; font-size: 12px; text-align: center;">
         Bu mesaj ${new Date().toLocaleString('tr-TR')} tarihinde 
-        <strong>birgulhanimkizogrenciyurdukartal.com.tr</strong> web sitesi üzerinden gönderildi.
+        <strong>apartkartal.com.tr</strong> web sitesi üzerinden gönderildi.
       </p>
     `;
     
     // E-posta ayarları
     const mailOptions = {
-      from: `"Birgül Hanım Kartal Şubesi" <${process.env.GMAIL_USER}>`,
+      from: `"Apart Kartal" <${process.env.GMAIL_USER}>`,
       to: process.env.GMAIL_TO,
       subject: emailSubject,
       html: emailBody,

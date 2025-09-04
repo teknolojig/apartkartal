@@ -9,7 +9,7 @@ Next.js kullanarak modern bir öğrenci yurdu web sitesi geliştiriyoruz.
 - Responsive tasarım
 - Modern animasyonlar
 - Türkçe içerik
-- Ana renk: #f42a93
+- Ana renk: #FF9B00
 
 ## Geliştirme Komutları
 

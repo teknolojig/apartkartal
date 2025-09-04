@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://birgulhanimkizogrenciyurdukartal.com.tr',
+  siteUrl: 'https://apartkartal.com.tr',
   generateRobotsTxt: false, // robots.txt dosyası zaten mevcut
   generateIndexSitemap: false,
   changefreq: 'weekly',
@@ -24,6 +24,6 @@ module.exports = {
     await config.transform(config, '/uskudar-universitesi'),
     await config.transform(config, '/acibadem-universitesi'),
     await config.transform(config, '/hakkimizda'),
-    await config.transform(config, '/yurtlarimiz'),
+    await config.transform(config, '/apartmanlarimiz'),
   ],
 }

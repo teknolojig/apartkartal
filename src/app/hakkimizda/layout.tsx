@@ -1,32 +1,32 @@
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Hakkımızda | Birgül Hanım Kız Öğrenci Yurtları - Kartal",
-  description: "15 yılı aşkın deneyimimizle İstanbul Kartal'da kız öğrencilerimize güvenli, konforlu ve modern yaşam alanları sunuyoruz. Aile sıcaklığında hizmet.",
-  keywords: "birgül hanım yurtları hakkında, kartal kız öğrenci yurdu deneyim, istanbul öğrenci yurdu güvenlik, kartal yurt deneyimi, birgül hanım yurt tarihçe",
+  title: "Hakkımızda | Apart Kartal - Kiralık Daire ve Apartmanlar",
+  description: "15 yılı aşkın deneyimimizle İstanbul Kartal'da güvenli, konforlu ve modern kiralık daire hizmetleri sunuyoruz. Profesyonel kiralama hizmetleri.",
+  keywords: "apart kartal hakkında, kartal kiralık daire deneyim, istanbul apartman kiralama, kartal apart deneyimi, apart kartal tarihçe",
   alternates: {
-    canonical: "https://birgulhanimkizogrenciyurdukartal.com.tr/hakkimizda",
+    canonical: "https://apartkartal.com.tr/hakkimizda",
   },
   openGraph: {
-    title: "Hakkımızda | Birgül Hanım Kız Öğrenci Yurtları",
-    description: "15 yılı aşkın deneyimimizle Kartal'da güvenli ve konforlu kız öğrenci yurdu. Aile sıcaklığında hizmet anlayışımızla öğrencilerimizin yanındayız.",
-    url: "https://birgulhanimkizogrenciyurdukartal.com.tr/hakkimizda",
+    title: "Hakkımızda | Apart Kartal",
+    description: "15 yılı aşkın deneyimimizle Kartal'da güvenli ve konforlu kiralık daire hizmetleri. Profesyonel hizmet anlayışımızla yanınızdayız.",
+    url: "https://apartkartal.com.tr/hakkimizda",
     type: "website",
     locale: "tr_TR",
-    siteName: "Birgül Hanım Kız Öğrenci Yurtları",
+    siteName: "Apart Kartal",
     images: [
       {
         url: '/images/about-hero.jpg',
         width: 1200,
         height: 630,
-        alt: 'Birgül Hanım Yurtları Hakkında',
+        alt: 'Apart Kartal Hakkında',
       }
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Hakkımızda | Birgül Hanım Kız Öğrenci Yurtları",
-    description: "15 yılı aşkın deneyimimizle Kartal'da güvenli kız öğrenci yurdu. Aile sıcaklığında hizmet.",
+    title: "Hakkımızda | Apart Kartal",
+    description: "15 yılı aşkın deneyimimizle Kartal'da güvenli kiralık daire hizmetleri.",
     images: ['/images/about-hero.jpg'],
   },
   robots: {
@@ -48,4 +48,4 @@ export default function HakkimizdaLayout({
   children: React.ReactNode
 }) {
   return <>{children}</>
-} 
+}

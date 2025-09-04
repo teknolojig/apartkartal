@@ -35,7 +35,7 @@ export default function YurdumuzSection() {
           className="text-center mb-16"
         >
           <h2 className="section-title">
-            Yurdumuzdan <span className="text-primary">Kareler</span>
+            Apartmanımızdan <span className="text-primary">Kareler</span>
           </h2>
           <p className="section-subtitle">
             Modern ve konforlu yaşam alanlarımızı yakından inceleyin

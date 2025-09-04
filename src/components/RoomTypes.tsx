@@ -42,24 +42,6 @@ const roomTypes = [
     capacity: 4,
     image: "/images/rooms/4kisi.jpg",
   },
-  {
-    id: 5,
-    title: "5 Kişilik Oda",
-    description: "Bütçe dostu",
-    features: ["Beş ayrı yatak", "Geniş çalışma alanı", "Kişisel dolaplar", "Mini buzdolabı"],
-    icon: <Users className="w-6 h-6" />,
-    capacity: 5,
-    image: "/images/rooms/5kisi.jpg",
-  },
-  {
-    id: 6,
-    title: "6 Kişilik Oda",
-    description: "En ekonomik seçenek",
-    features: ["Altı ayrı yatak", "Ekstra geniş alan", "Kişisel dolaplar", "Mini buzdolabı"],
-    icon: <Users className="w-6 h-6" />,
-    capacity: 6,
-    image: "/images/rooms/6kisi.jpg",
-  },
 ]
 
 export default function RoomTypes() {
@@ -81,7 +63,7 @@ export default function RoomTypes() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {roomTypes.map((room, index) => (
             <motion.div
               key={room.id}

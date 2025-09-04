@@ -1,31 +1,31 @@
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Kartal Kız Öğrenci Yurdu İletişim | Adres ve Telefon Bilgileri",
-  description: "Kartal kız öğrenci yurdu iletişim bilgileri. Yalı Mahallesi Tuğra Sokak No:6 Kartal/İstanbul. Tel: 0533 035 95 73. Hemen arayın, kız yurdumuz hakkında bilgi alın.",
-  keywords: "kartal kız öğrenci yurdu iletişim, kartal kız öğrenci yurdu adres, kartal kız öğrenci yurdu telefon, birgül hanım iletişim, kartal öğrenci yurdu nerede, kartal kız öğrenci yurdu ulaşım, yalı mahallesi kız öğrenci yurdu",
+  title: "Apart Kartal İletişim | Adres ve Telefon Bilgileri",
+  description: "Apart Kartal iletişim bilgileri. Yalı Mahallesi Tuğra Sokak No:6 Kartal/İstanbul. Tel: 0533 035 95 73. Hemen arayın, kiralık dairelerimiz hakkında bilgi alın.",
+  keywords: "apart kartal iletişim, apart kartal adres, apart kartal telefon, kartal kiralık daire iletişim, kartal apart nerede, apart kartal ulaşım, yalı mahallesi kiralık daire",
   alternates: {
-    canonical: "https://birgulhanimkizogrenciyurdukartal.com.tr/iletisim",
+    canonical: "https://apartkartal.com.tr/iletisim",
   },
   openGraph: {
-    title: "İletişim | Birgül Hanım Kartal Kız Öğrenci Yurdu",
-    description: "Kartal kız öğrenci yurdumuz Yalı Mahallesi'nde, Gedik Üniversitesi'ne 5 dakika mesafede. Detaylı bilgi ve kayıt için: 0533 035 95 73",
-    url: "https://birgulhanimkizogrenciyurdukartal.com.tr/iletisim",
+    title: "İletişim | Apart Kartal Kiralık Daireler",
+    description: "Kartal'daki apartmanımız Yalı Mahallesi'nde, Gedik Üniversitesi'ne 5 dakika mesafede. Detaylı bilgi ve görüşme için: 0533 035 95 73",
+    url: "https://apartkartal.com.tr/iletisim",
     type: "website",
     locale: "tr_TR",
-    siteName: "Birgül Hanım Kız Öğrenci Yurtları",
+    siteName: "Apart Kartal",
     images: [
       {
         url: '/images/contact.jpg',
         width: 1200,
         height: 630,
-        alt: 'Kartal Kız Öğrenci Yurdu İletişim',
+        alt: 'Apart Kartal İletişim',
       }
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kartal Kız Öğrenci Yurdu İletişim",
+    title: "Apart Kartal İletişim",
     description: "Yalı Mah. Tuğra Sok. No:6 Kartal/İstanbul - Tel: 0533 035 95 73",
     images: ['/images/contact.jpg'],
   },

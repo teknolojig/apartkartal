@@ -11,8 +11,8 @@ import QuoteModal from "./QuoteModal"
 const navigation = [
   { name: "HAKKIMIZDA", href: "/hakkimizda" },
   {
-    name: "YURDUMUZ",
-    href: "/yurtlarimiz",
+    name: "APARTIMIZ",
+    href: "/apartmanlarimiz",
     dropdown: [
       { name: "Yeme İçme", href: "/yeme-icme" },
       { name: "Sosyal Alanlar", href: "/sosyal-alanlar" },
@@ -20,21 +20,7 @@ const navigation = [
       { name: "Çalışma Alanları", href: "/calisma-alanlari" },
     ],
   },
-  { name: "ODALARIMIZ", href: "/odalarimiz" },
-  {
-    name: "ÜNİVERSİTELERİMİZ",
-    href: "#",
-    dropdown: [
-      { name: "Acıbadem Üniversitesi", href: "/acibadem-universitesi" },
-      { name: "Gedik Üniversitesi", href: "/gedik-universitesi" },
-      { name: "Maltepe Üniversitesi", href: "/maltepe-universitesi" },
-      { name: "Marmara Üniversitesi", href: "/marmara-universitesi" },
-      { name: "Medeniyet Üniversitesi", href: "/medeniyet-universitesi" },
-      { name: "Okan Üniversitesi", href: "/okan-universitesi" },
-      { name: "Piri Reis Üniversitesi", href: "/piri-reis-universitesi" },
-      { name: "Üsküdar Üniversitesi", href: "/uskudar-universitesi" },
-    ],
-  },
+  { name: "DAİRELER", href: "/odalarimiz" },
   { name: "İLETİŞİM", href: "/iletisim" },
 ]
 
@@ -83,7 +69,7 @@ export default function Header() {
       <header
         className={cn(
           "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-          scrolled && !mobileMenuOpen ? "bg-white shadow-xl" : "",
+          scrolled && !mobileMenuOpen ? "bg-white shadow-xl" : "bg-white/95 backdrop-blur-md shadow-lg",
           mobileMenuOpen ? "lg:bg-white lg:shadow-xl" : ""
         )}
       >
@@ -92,8 +78,8 @@ export default function Header() {
             <div className="flex items-center">
               <Link href="/" className={cn("flex items-center gap-3", mobileMenuOpen && "lg:block hidden")}>
                 <Image
-                  src={scrolled && !mobileMenuOpen ? "/logo.png" : "/beyazlogo.png"}
-                  alt="Birgül Hanım Logo"
+                  src="/logo.svg"
+                  alt="Apart Kartal Logo"
                   width={256}
                   height={71}
                   priority
@@ -111,8 +97,8 @@ export default function Header() {
                       <div>
                         <button
                           className={cn(
-                            "px-2 py-1.5 text-sm font-semibold uppercase tracking-wide transition-colors flex items-center gap-1",
-                            scrolled ? "text-gray-700 hover:text-primary" : "text-white hover:text-white/80 drop-shadow-lg"
+                            "px-4 py-2 text-base font-semibold uppercase tracking-wide transition-colors flex items-center gap-1",
+                            scrolled ? "text-gray-700 hover:text-primary" : "text-gray-800 hover:text-primary"
                           )}
                         >
                           {item.name}
@@ -136,8 +122,8 @@ export default function Header() {
                       <Link
                         href={item.href}
                         className={cn(
-                          "px-2 py-1.5 text-sm font-semibold uppercase tracking-wide transition-colors",
-                          scrolled ? "text-gray-700 hover:text-primary" : "text-white hover:text-white/80 drop-shadow-lg"
+                          "px-4 py-2 text-base font-semibold uppercase tracking-wide transition-colors",
+                          scrolled ? "text-gray-700 hover:text-primary" : "text-gray-800 hover:text-primary"
                         )}
                       >
                         {item.name}
@@ -147,15 +133,10 @@ export default function Header() {
                 ))}
                 <div className="flex items-center gap-1.5 ml-2">
                   <motion.a
-                    href="tel:+905330359573"
+                    href="tel:+905074373440"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className={cn(
-                      "inline-flex items-center gap-1.5 px-5 py-2 rounded-full font-semibold text-sm uppercase tracking-wide transition-all duration-300 shadow-lg",
-                      scrolled
-                        ? "bg-green-600 text-white hover:bg-green-700"
-                        : "bg-green-600/90 backdrop-blur-sm text-white hover:bg-green-600"
-                    )}
+                    className="inline-flex items-center gap-1.5 px-5 py-2 rounded-full font-semibold text-sm uppercase tracking-wide transition-all duration-300 shadow-lg bg-green-600 text-white hover:bg-green-700"
                   >
                     <Phone className="w-3.5 h-3.5" />
                     <span>HEMEN ARA</span>
@@ -164,12 +145,7 @@ export default function Header() {
                     onClick={() => setQuoteModalOpen(true)}
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className={cn(
-                      "inline-flex items-center gap-1.5 px-5 py-2 rounded-full font-semibold text-sm uppercase tracking-wide transition-all duration-300 shadow-lg",
-                      scrolled
-                        ? "bg-primary text-white hover:bg-primary-dark"
-                        : "bg-white/90 backdrop-blur-sm text-primary hover:bg-white"
-                    )}
+                    className="inline-flex items-center gap-1.5 px-5 py-2 rounded-full font-semibold text-sm uppercase tracking-wide transition-all duration-300 shadow-lg bg-primary text-white hover:bg-primary-dark"
                   >
                     <Send className="w-3.5 h-3.5" />
                     <span>TEKLİF AL</span>
@@ -182,10 +158,7 @@ export default function Header() {
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 aria-label={mobileMenuOpen ? "Menüyü kapat" : "Menüyü aç"}
-                className={cn(
-                  "inline-flex items-center justify-center p-2 rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary",
-                  scrolled ? "text-gray-700 hover:text-primary hover:bg-gray-100" : "text-white hover:bg-white/20 drop-shadow-lg"
-                )}
+                className="inline-flex items-center justify-center p-2 rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary text-gray-700 hover:text-primary hover:bg-gray-100"
               >
                 {mobileMenuOpen ? (
                   <X className="block h-6 w-6" />
@@ -224,8 +197,8 @@ export default function Header() {
               <div className="p-6">
                 <div className="flex items-center justify-between mb-8">
                   <Image
-                    src="/beyazlogo.png"
-                    alt="Birgül Hanım Logo"
+                    src="/beyazlogo.svg"
+                    alt="Apart Kartal Logo"
                     width={200}
                     height={56}
                     priority
@@ -338,11 +311,11 @@ export default function Header() {
                     </p>
                     <p className="flex items-center gap-2">
                       <Phone className="w-5 h-5 text-white flex-shrink-0" />
-                      <span>+90 533 035 95 73</span>
+                      <span>+90 507 437 34 40</span>
                     </p>
                     <div className="flex items-start gap-2">
                       <Mail className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
-                      <p className="text-sm break-words">info@birgulhanimkizogrenciyurdukartal.com.tr</p>
+                      <p className="text-sm break-words">info@apartkartal.com.tr</p>
                     </div>
                   </div>
                 </motion.div>
