@@ -13,7 +13,7 @@ const roomTypes = [
     features: ["Tek kişilik yatak", "Çalışma masası", "Gardırop", "Mini buzdolabı"],
     icon: <Users className="w-6 h-6" />,
     capacity: 1,
-    image: "/images/rooms/1kisi.jpg",
+    image: "/images/rooms/modern-room.jpg",
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const roomTypes = [
     features: ["İki ayrı yatak", "İki çalışma masası", "Geniş gardırop", "Mini buzdolabı"],
     icon: <Users className="w-6 h-6" />,
     capacity: 2,
-    image: "/images/rooms/2kisi.jpg",
+    image: "/images/rooms/modern-room.jpg",
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ const roomTypes = [
     features: ["Üç ayrı yatak", "Ortak çalışma alanı", "Gardırop", "Mini buzdolabı"],
     icon: <Users className="w-6 h-6" />,
     capacity: 3,
-    image: "/images/rooms/3kisi.jpg",
+    image: "/images/rooms/modern-room.jpg",
   },
   {
     id: 4,
@@ -40,7 +40,7 @@ const roomTypes = [
     features: ["Dört ayrı yatak", "Ortak çalışma alanı", "Gardırop", "Mini buzdolabı"],
     icon: <Users className="w-6 h-6" />,
     capacity: 4,
-    image: "/images/rooms/4kisi.jpg",
+    image: "/images/rooms/modern-room.jpg",
   },
 ]
 

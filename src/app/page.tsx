@@ -3,7 +3,6 @@ import HeroSection from "@/components/HeroSection"
 import Features from "@/components/Features"
 import RoomTypes from "@/components/RoomTypes"
 import PriceList from "@/components/PriceList"
-import YurdumuzSection from "@/components/YurdumuzSection"
 import Footer from "@/components/Footer"
 import { LazyLocationTransport } from "@/components/LazySection"
 import { Metadata } from "next"
@@ -48,7 +47,6 @@ export default function Home() {
         <Features />
         <RoomTypes />
         <PriceList />
-        <YurdumuzSection />
         <LazyLocationTransport />
       </main>
       <Footer />

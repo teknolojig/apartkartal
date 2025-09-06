@@ -58,8 +58,8 @@ const priceOptions = [
   {
     id: 4,
     title: "4 Kişilik Daire",
-    price: "18.000", 
-    originalPrice: "20.000",
+    price: "15.000", 
+    originalPrice: "18.000",
     description: "En ekonomik seçenek",
     features: [
       "Ortak banyo",

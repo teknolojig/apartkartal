@@ -16,7 +16,7 @@ const apartmentTypes = [
     capacity: 1,
     price: "32.000₺",
     originalPrice: "35.000₺",
-    image: "/images/rooms/1kisi.jpg",
+    image: "/images/rooms/modern-room.jpg",
     features: [
       "Özel banyo ve tuvalet",
       "Mini mutfak", 
@@ -34,7 +34,7 @@ const apartmentTypes = [
     capacity: 2,
     price: "27.000₺",
     originalPrice: "30.000₺",
-    image: "/images/rooms/2kisi.jpg",
+    image: "/images/rooms/modern-room.jpg",
     features: [
       "Özel banyo ve tuvalet",
       "Tam donanımlı mutfak",
@@ -52,7 +52,7 @@ const apartmentTypes = [
     capacity: 3,
     price: "22.000₺",
     originalPrice: "25.000₺",
-    image: "/images/rooms/3kisi.jpg",
+    image: "/images/rooms/modern-room.jpg",
     features: [
       "Ortak banyo ve tuvalet",
       "Tam donanımlı mutfak",
@@ -68,9 +68,9 @@ const apartmentTypes = [
     id: "4-kisilik-daire",
     title: "4 Kişilik Daire",
     capacity: 4, 
-    price: "18.000₺",
-    originalPrice: "20.000₺",
-    image: "/images/rooms/4kisi.jpg",
+    price: "15.000₺",
+    originalPrice: "18.000₺",
+    image: "/images/rooms/modern-room.jpg",
     features: [
       "Ortak banyo ve tuvalet",
       "Tam donanımlı mutfak",
@@ -113,7 +113,7 @@ export default function DairelerimizPage() {
           </motion.div>
 
           {/* Apartment Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+          <div className="grid grid-cols-1 gap-8 mb-16 max-w-5xl mx-auto">
             {apartmentTypes.map((apartment, index) => (
               <motion.div
                 key={apartment.id}
