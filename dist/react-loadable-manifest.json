@@ -1,0 +1,24 @@
+{
+  "components/LazySection.tsx -> @/components/GalleryModal": {
+    "id": "components/LazySection.tsx -> @/components/GalleryModal",
+    "files": [
+      "static/chunks/_app-pages-browser_src_components_GalleryModal_tsx.js"
+    ]
+  },
+  "components/LazySection.tsx -> @/components/LocationTransport": {
+    "id": "components/LazySection.tsx -> @/components/LocationTransport",
+    "files": [
+      "static/chunks/_app-pages-browser_src_components_LocationTransport_tsx.js"
+    ]
+  },
+  "components/LazySection.tsx -> @/components/QuoteModal": {
+    "id": "components/LazySection.tsx -> @/components/QuoteModal",
+    "files": []
+  },
+  "components/LazySection.tsx -> @/components/VideoModal": {
+    "id": "components/LazySection.tsx -> @/components/VideoModal",
+    "files": [
+      "static/chunks/_app-pages-browser_src_components_VideoModal_tsx.js"
+    ]
+  }
+}

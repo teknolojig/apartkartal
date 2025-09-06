@@ -161,7 +161,7 @@ export default function LocationTransport() {
               Toplu taşıma ve özel araçlarla kolayca ulaşabilirsiniz
             </p>
             <motion.a 
-              href="https://maps.app.goo.gl/p766aV1YQ13RF2TF6" 
+              href="https://www.google.com/maps/place/Yal%C4%B1,+Tu%C4%9Fra+Sk.+No:6,+34873+Kartal%2F%C4%B0stanbul/@40.8970293,29.2213494,17z/data=!3m1!4b1!4m6!3m5!1s0x14cac4ae505a05ad:0x41234bbb5977cf56!8m2!3d40.8970293!4d29.2239297!16s%2Fg%2F11fl9gl23p!5m1!1e1?entry=ttu&g_ep=EgoyMDI1MDkwMy4wIKXMDSoASAFQAw%3D%3D" 
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
